@@ -1,6 +1,16 @@
 const express = require("express");
+const cors = require("cors");
 const app = express();
 const port = 3000;
+
+// Configure CORS
+const corsOptions = {
+	origin: "http://localhost:5173", // Allow Vite frontend
+	optionsSuccessStatus: 200,
+};
+
+// Apply CORS middleware
+app.use(cors(corsOptions));
 
 // Mock fuel prices
 const fuelPrices = {
