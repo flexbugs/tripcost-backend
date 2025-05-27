@@ -14,11 +14,11 @@ app.use(cors(corsOptions));
 
 // Mock fuel prices
 const fuelPrices = {
-	date: "2025-05-13",
+	date: "2025-05-27",
 	prices: {
-		"Blyfri 95": 13.94,
-		"Oktan 100": 15.56,
-		Diesel: 12.49,
+		"Blyfri 95": 13.49,
+		"Oktan 100": 15.46,
+		Diesel: 12.29,
 	},
 };
 
